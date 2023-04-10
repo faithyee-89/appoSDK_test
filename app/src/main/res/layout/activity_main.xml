@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tv_online"
+        android:onClick="online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备上线"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3" />
+
+    <Button
+        android:id="@+id/tv_offline"
+        android:onClick="offline"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备下线"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3" />
+
+    <Button
+        android:id="@+id/tv_subscribe"
+        android:onClick="appoSubscribe"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅自定义主题"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3" />
+
+    <Button
+        android:id="@+id/tv_appoResponse"
+        android:onClick="appoResponse"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取平台下发内容"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_cancel"
+        android:onClick="cancelAppoSubscribe"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消订阅自定义主题"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_share"
+        android:onClick="appoRequest"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据上报"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+</LinearLayout>
