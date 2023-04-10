@@ -7,13 +7,13 @@ package com.example.apposdk_app.bean;
  */
 public class ResponseBean {
     private String type;
-    private String isSplitScreen;
-    private String id;
+    private String splitScreen;
+    private String contentId;
     private String playModel;
     private String command;
     private String url;
-    private String name;
-    private String isDownUrl;
+    private String contentName;
+    private String downUrl;
 
     public String getType() {
         return type;
@@ -23,20 +23,20 @@ public class ResponseBean {
         this.type = type;
     }
 
-    public String getIsSplitScreen() {
-        return isSplitScreen;
+    public String getSplitScreen() {
+        return splitScreen;
     }
 
-    public void setIsSplitScreen(String isSplitScreen) {
-        this.isSplitScreen = isSplitScreen;
+    public void setSplitScreen(String splitScreen) {
+        this.splitScreen = splitScreen;
     }
 
-    public String getId() {
-        return id;
+    public String getContentId() {
+        return contentId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setContentId(String contentId) {
+        this.contentId = contentId;
     }
 
     public String getPlayModel() {
@@ -63,19 +63,19 @@ public class ResponseBean {
         this.url = url;
     }
 
-    public String getName() {
-        return name;
+    public String getContentName() {
+        return contentName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setContentName(String contentName) {
+        this.contentName = contentName;
     }
 
-    public String getIsDownUrl() {
-        return isDownUrl;
+    public String getDownUrl() {
+        return downUrl;
     }
 
-    public void setIsDownUrl(String isDownUrl) {
-        this.isDownUrl = isDownUrl;
+    public void setDownUrl(String downUrl) {
+        this.downUrl = downUrl;
     }
 }
