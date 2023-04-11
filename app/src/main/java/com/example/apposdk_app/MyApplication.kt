@@ -6,6 +6,7 @@ import com.appotronics.appo_lib.AuthResult
 import com.appotronics.appo_lib.MessageResult
 import com.appotronics.appo_lib.callback.AuthResponseCallback
 import com.appotronics.appo_lib.engine.MqttLogUtils
+import com.example.apposdk_app.utils.Utils
 
 /**
  * @desc:
@@ -16,7 +17,9 @@ class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        AppoSDK.init(this, "admin", "public", "APPO-000006", "", object : AuthResponseCallback {
+        Utils.init(this)
+        //f56d3bdd-a082-4852-89ec-6f3229e8df27  APPO-000007
+        AppoSDK.init(this, "admin", "public", "APPO-000002", "", object : AuthResponseCallback {
             override fun authRes(result: AuthResult, message: MessageResult, gsn: String) {
                 when (result) {
                     AuthResult.AuthSuccess -> {

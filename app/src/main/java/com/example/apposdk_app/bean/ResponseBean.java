@@ -15,6 +15,8 @@ public class ResponseBean {
     private String contentName;
     private String downUrl;
 
+
+
     public String getType() {
         return type;
     }
