@@ -19,7 +19,7 @@ class MyApplication : Application() {
         super.onCreate()
         Utils.init(this)
         //f56d3bdd-a082-4852-89ec-6f3229e8df27  APPO-000007
-        AppoSDK.init(this, "admin", "public", "APPO-000002", "", object : AuthResponseCallback {
+        AppoSDK.init(this, "admin", "public", "APPO-000006", "", object : AuthResponseCallback {
             override fun authRes(result: AuthResult, message: MessageResult, gsn: String) {
                 when (result) {
                     AuthResult.AuthSuccess -> {
