@@ -73,4 +73,59 @@
         android:paddingVertical="6dp"
         android:background="#DFC9D3"/>
 
+    <Button
+        android:id="@+id/tv_video_1"
+        android:onClick="video1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频1"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_video_2"
+        android:onClick="video2"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频2"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_video_3"
+        android:onClick="video3"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频3"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_video_4"
+        android:onClick="video4"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频4"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
+    <Button
+        android:id="@+id/tv_video_5"
+        android:onClick="video5"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频5"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="#DFC9D3"/>
+
 </LinearLayout>

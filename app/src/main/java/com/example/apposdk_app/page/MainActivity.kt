@@ -52,7 +52,12 @@ class MainActivity : AppCompatActivity() {
                 MqttLogUtils.i("tv_appoResponse 客户端获取到json == $json")
                 val parseObject = JSONObject.parseObject(json, ResponseBean::class.java)
                 if (parseObject != null) {
-                    startApp(parseObject.type, parseObject.url, parseObject.contentName, parseObject.downUrl)
+                    startApp(
+                        parseObject.type,
+                        parseObject.url,
+                        parseObject.contentName,
+                        parseObject.downUrl
+                    )
                 }
             }
         })
@@ -92,8 +97,26 @@ class MainActivity : AppCompatActivity() {
                 MqttLogUtils.i("appoRequest onFail")
             }
         })
+    }
 
+    fun video1(view: View?) {
+        startApp("3", "gf_01", "gf_01", "1")
+    }
 
+    fun video2(view: View?) {
+        startApp("3", "gf_02", "gf_02", "1")
+    }
+
+    fun video3(view: View?) {
+        startApp("3", "gf_03", "gf_03", "1")
+    }
+
+    fun video4(view: View?) {
+        startApp("3", "gf_05", "gf_05", "1")
+    }
+
+    fun video5(view: View?) {
+        startApp("3", "gf_05", "gf_05", "1")
     }
 
     private fun startApp(type: String, url: String, contentName: String, downUrl: String) {
